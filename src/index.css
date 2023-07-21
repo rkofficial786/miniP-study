@@ -1,0 +1,408 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: var(--color-text);
+  /* background-color: var(--color-bg); */
+  overflow-x: hidden;
+}
+
+body{
+  background-color: var(--color-bg);
+}
+:root{
+--color-text:white;
+--color-btn:blue;
+--color-bg:#182125;
+--color-divbg:grey;
+--color-input: #2b3033 ;
+--color-navBack: #283747 ;
+  --color-bodyBack:#1A1A1A;
+  --color-button: #283747;
+  --color-product:  #2C3E50;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.nav-link ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.nav-link ul li{
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  /* opacity: 0.6; */
+
+  
+}
+
+.nav-link ul li a{
+  text-decoration: none;
+}
+
+.btns{
+  background-color: var(--color-input);
+  padding: 10px 10px;
+  border: none;
+  border-radius: 6px;
+  margin: 0px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100px;
+}
+
+.login-btn{
+  background-color: var(--color-product);
+}
+
+.hero{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+ width: 100%;
+ 
+ 
+}
+
+.template{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.signup-form form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+  
+}
+
+
+.login-form form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+ 
+}
+label{
+  font-weight: 600;
+  font-size: 17px;
+}
+.radio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.radio div label{
+margin: 10px;
+}
+
+.signup-form form label{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  flex-direction: column;
+  position: relative;
+
+}
+.login-form form label{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  flex-direction: column;
+  position: relative;
+}
+input{
+  background-color: var(--color-input);
+  width: 24rem;
+  height: 20px;
+  font-size: 12px;
+  padding: 8px;
+  /* border:2px solid blue; */
+  border-radius: 9px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none; /* optional: to remove the default blue outline */
+}
+
+
+::placeholder{
+color: var(--color-text);
+}
+
+.signup-form form label span{
+  position: absolute;
+  background-color: transparent !important;
+  right: 5px;
+ bottom: 6px;
+}
+.login-form form label span{
+  position: absolute;
+  background-color: transparent !important;
+  right: 5px;
+ bottom: 6px;
+}
+.log-btn{
+  background-color: yellow;
+  width: 25rem;
+  font-size: 17px;
+  color: black;
+  padding: 8px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+.google{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--color-input);
+  
+}
+.google-btn{
+  width: 15rem;
+  padding: 0;
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+
+/* course--- */
+
+
+.spinner-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+.spinner {
+ 
+
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  padding: 6.7px;
+  background: conic-gradient(from 135deg at top,#474bff 90deg, #0000 0) 0 calc(50% - 4.5px)/19px 9.5px,
+         radial-gradient(farthest-side at bottom left,#0000 calc(100% - 6.7px),#474bff calc(100% - 5.6px) 99%,#0000) top right/50%  50% content-box content-box,
+         radial-gradient(farthest-side at top,#0000 calc(100% - 6.7px),#474bff calc(100% - 5.6px) 99%,#0000) bottom   /100% 50% content-box content-box;
+  background-repeat: no-repeat;
+  animation: spinner-v8og74 1s infinite linear;
+}
+
+@keyframes spinner-v8og74 {
+  100% {
+     transform: rotate(1turn);
+  }
+}
+
+
+.header{
+  background-color: var(--color-navBack);
+  text-align: center;
+  padding: 20px;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.header h1{
+  margin-right: 8%;
+}
+
+
+.filter-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  margin-top: 0px;
+  flex-wrap: wrap;
+  
+  
+}
+
+.btn{
+  background-color: var(--color-button);
+  padding: 10px;
+  margin: 10px;
+  color: var(--color-text);
+  border-radius: 8px;
+  font-size: 1rem;
+  border: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.f-btn{
+width: 200px;
+}
+
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px 10%;
+ 
+}
+
+.card{
+  max-width: 350px;
+  background-color: var(--color-product);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+   border-radius: 15px;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  height: 450px;
+  overflow: hidden;
+  color: var(--color-text);
+}
+
+.card img{
+  width: 350px;
+
+}
+
+.details{
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  
+flex-direction: column;
+height: 60%;
+text-align: left;
+}
+
+
+.selected{
+  border: 1px solid var(--color-text);
+  opacity: 1;
+}
+
+.details{
+  position: relative;
+}
+
+.like-btn{
+  position: absolute;
+  top: -20px;
+}
+
+.like-button{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.buy-btn{
+  width: 140px;
+  margin-left: 100px;
+  background-color: var(--color-bg);
+  z-index: 24;
+}
+
+.buy-btn:hover{
+  color: var(--color-text);
+  opacity: 1;
+}
+
+.active{
+ 
+  color:rgb(255, 238, 238);
+ 
+
+
+}
+
+
+@media(0px<= width <= 600px){
+input{
+  width: 20rem;
+}
+.log-btn{
+  width: 15rem;
+}
+
+
+.header{
+  z-index: -10;
+}
+.nav-link ul {
+  position: absolute;
+  top: 60px;
+  left: 90px;
+  z-index: 20;
+  
+ 
+ 
+}
+.about{
+  margin-top: 100px;
+}
+
+.header{
+  
+padding: 30px;
+}
+
+.buy-btn{
+  margin-left: 65px;
+}
+.header h1{
+  margin-right: 0;
+}
+
+}
